@@ -13,7 +13,9 @@ function Footer(props) {
                     Если вы хотите что-то узнать или спросить,
                     {"\n"}оставьте свой вопрос в форме обратной связи
                 </div>
-                <Button className="footer-button" Type={ButtonType.PRIMARY} text={text} type={type}/>
+                <div className="button3-style">
+                    <Button Type={ButtonType.PRIMARY} text={text} type={type}/>
+                </div>
                 <div className='footer-text2'>
                     © 2022 АО «СберТех» (является дочерним обществом ПАО «Сбербанк»)
                 </div>

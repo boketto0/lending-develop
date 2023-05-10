@@ -37,18 +37,20 @@ export const Card = (props) => {
             {props.cardType === CardType.SECOND && (
                 <div>
                     <div className='card-content'>
-                        <div className='card-icon'>{props.icon}</div>
-                        <div className="card-title">{props.title}</div>
+                        <div className='card-picture'>{props.picture}</div>
+                        <div className="card2-title">{props.title}</div>
                     </div>
                 </div>
             )}
             {props.cardType === CardType.THIRD && (
                 <div>
                     <div className='card-content'>
-                        <div className='card-icon'>{props.icon}</div>
-                        <div className="card-title">{props.title}</div>
-                        <div className="card-subtitle">{props.subtitle}</div>
-                        <div className="card-text">{props.text}</div>
+                        <div className='card2-picture'>{props.picture}</div>
+                        <div className='card3-textblock'>
+                            <div className="card-title">{props.title}</div>
+                            <div className="card3-subtitle">{props.subtitle}</div>
+                            <div className="card3-text">{props.text}</div>
+                        </div>
                     </div>
                 </div>
             )}

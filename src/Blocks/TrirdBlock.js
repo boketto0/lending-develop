@@ -1,8 +1,11 @@
 import './TrirdBlock.css'
 import {Button, ButtonType} from "../components/button/Button";
-import List2 from './listRow2/List2';
+import List2 from '../components/lists/listRow2/List2';
 import {Card, CardType, CardWrapper} from '../components/cards/Card'
 import Icon from '../images/ДС2 1.svg'
+import Icon1 from '../images/card2/Card header.svg'
+import Icon2 from '../images/card2/Card header-2.svg'
+import Icon3 from '../images/card2/Card header-3.svg'
 
 function ThirdBlock(props) {
 
@@ -11,15 +14,15 @@ function ThirdBlock(props) {
 
     const elements = [
         {
-        //   picture: <img src={Icon2}/>,
+        picture: <img src={Icon1}/>,
         title: 'Справочники'
         },
         {
-        //   picture: <img src={Icon2}/>,
+        picture: <img src={Icon2}/>,
         title: 'Интерактивная документация'
         },
         {
-        //   picture: <img src={Icon2}/>,
+        picture: <img src={Icon3}/>,
         title: 'Панель центра уведомлений'        
     }
     ]
@@ -34,7 +37,7 @@ function ThirdBlock(props) {
             <CardWrapper className="second-block_cards">
                 { elements.map((el) => {
                     return(
-                    <Card title={el.title} text={el.text} cardType={CardType.SECOND}/>
+                    <Card title={el.title} text={el.text} picture={el.picture} cardType={CardType.SECOND}/>
                     )
                 })}
             </CardWrapper>
