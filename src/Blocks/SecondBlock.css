@@ -3,7 +3,7 @@
     background-color: white;
     font-family: 'SB Sans Text';
     font-style: normal;
-    height: 1490px;
+    height: 1200px;
   }
 
   .second-block_cards {
@@ -17,7 +17,7 @@
   .second-block__container {
     display: flex;
     flex-direction: row;
-    width: 1359px;
+    width: 1400px;
     height: 624px;
     margin-top: 79px;
     flex-wrap: wrap;
@@ -67,6 +67,7 @@
     font-weight: 400;
     font-size: 20px;
     line-height: 24px;
+    margin-left: 20px;
   }
   
   .second-block__container__circles {
@@ -86,7 +87,8 @@
     display: flex;
     flex-direction: column;
     align-items: baseline;
-    justify-content: baseline;
+    justify-content: center;
+    text-align: left;
   }
   
   

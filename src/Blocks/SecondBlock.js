@@ -1,7 +1,7 @@
 import './SecondBlock.css'
 import {Button, ButtonType} from "../components/button/Button";
 import Icon from '../images/Illustrations.svg'
-import List1 from './listRow1/List1';
+import List1 from '../components/lists/listRow1/List1';
 import { CardType, Card, CardWrapper } from '../components/cards/Card';
 import Icon1 from '../images/card1/Frame 427318203.svg'
 import Icon2 from '../images/card1/Frame 427318215.svg'

@@ -1,24 +1,28 @@
 import './FourthBlock.css'
-import List3 from './listRow3/List3';
+import List3 from '../components/lists/listRow3/List3';
 import {Card, CardType, CardWrapper} from '../components/cards/Card'
+import Icon1 from '../images/card3/Card header-4.svg'
+import Icon2 from '../images/card3/Card header-4.svg'
+import Icon3 from '../images/card3/0 9.svg'
 
 function FourthBlock() {
 
     const elements = [
         {
-        //   picture: <img src={Icon2}/>,
-          title: 'Button',
-          text: " "/*'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Blandit pellentesque eu eget.'*/
+          picture: <img src={Icon1}/>,
+          title: 'Версия 2.0',
+          text: "14 мая 2022"
         },
         {
-        //   picture: <img src={Icon2}/>,
-          title: 'Alerts',
-          text: " " /*'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Blandit pellentesque eu eget.'*/
+          picture: <img src={Icon2}/>,
+          title: 'Версия 2.0',
+          text: "14 мая 2022"       
         },
         {
-        //   picture: <img src={Icon2}/>,
-          title: 'Button group',
-          text: " "/*'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Blandit pellentesque eu eget.'*/
+          picture: <img src={Icon3}/>,
+          title: 'Версия 1.0',
+          subtitle: "Следующее обновление •  нет даты",
+          text: "Доработка и улучшение документа"
         }
     ]        
 
@@ -28,10 +32,10 @@ function FourthBlock() {
             <div className='fourth-block__title'>Анонсы и релизы</div>
             <div className='fourth-block__text'>Будьте вкурсе всех последних
                 {"\n"}изменений и доработок в нашей дизайн системе
-            <CardWrapper>
+            <CardWrapper className="fourth-block__cards">
                 { elements.map((el) => {
                     return(
-                    <Card title={el.title} text={el.text} cardType={CardType.THIRD}/>
+                    <Card picture={el.picture} title={el.title} text={el.text} subtitle={el.subtitle} cardType={CardType.THIRD}/>
                     )
                 })}
             </CardWrapper>
